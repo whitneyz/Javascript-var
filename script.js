@@ -12,7 +12,7 @@
 
 (function () {
 
-let greeting = alert ("Hello"+","+"World!");
+var name = prompt("Hello, Ameerah!");
 
 
 })();
