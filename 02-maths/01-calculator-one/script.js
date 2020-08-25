@@ -16,22 +16,30 @@
 
         var operand1 = +document.getElementById("op-one").value;
         var operand2 = +document.getElementById("op-two").value;
-
         var result = operand1 + operand2;
-        alert(result);
+            alert(result);
 
-        document.getElementById("result").innerHTML = operand1 + operand2;
     });
 
     document.getElementById("substraction").addEventListener("click", function () {
-        // perform an substraction
+
+        var operand1 = +document.getElementById("op-one").value;
+        var operand2 = +document.getElementById("op-two").value;
+        var result = operand1 - operand2;
+        alert(result);
     });
 
     document.getElementById("multiplication").addEventListener("click", function () {
-        // perform an multiplication
+        var operand1 = +document.getElementById("op-one").value;
+        var operand2 = +document.getElementById("op-two").value;
+        var result = operand1 * operand2;
+        alert(result);
     });
 
     document.getElementById("division").addEventListener("click", function () {
-        // perform an division
+        var operand1 = +document.getElementById("op-one").value;
+        var operand2 = +document.getElementById("op-two").value;
+        var result = operand1 / operand2;
+        alert(result);
     });
 })();
