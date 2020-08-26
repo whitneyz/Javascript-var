@@ -9,14 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
-    // to get the value of an input: document.getElementById("element-id").value
-
+(function factorialize (num) {
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        function factorialize(num) {
+            return num;
 
-    });
+        factorialize(5)};})})
+alert(num)
 
-})();
+//document.getElementById("run").addEventListener("click", function()
