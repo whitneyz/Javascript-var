@@ -9,11 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
+        let a = 1;
+        let b = 21;
+        let c = [];
+        for (i = a; i <= b; i++) {
+            if (Math.sqrt(i) == parseInt(Math.sqrt(i)))
+            { c.push(i);
+            }
 
-        // your code here
+        }
+        alert(c);
 
     });
 
