@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     var fruits = [
         "pomme",
@@ -23,7 +23,13 @@
         "raisin",
         "cerise",
     ];
+    /*document.getElementById("run").addEventListener("click", function () {
+        alert(fruits[fruits.pop]);*/
 
-    // your code here
-
+        document.getElementById("run").addEventListener("click", function () {
+           console.log(fruits.pop());
+           console.log(fruits.shift());
+           console.log(fruits.unshift("banana"));
+           console.log(fruits.push("kiwi"));
+    });
 })();
