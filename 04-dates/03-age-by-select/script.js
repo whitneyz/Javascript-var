@@ -9,8 +9,29 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let day = document.getElementById("dob-day").value;
+        let month = document.getElementById("dob-month").value;
+        let year = document.getElementById("dob-year").value;
 
+        let birthdate = new Date(year, month, day);
+
+        let dateoftoday = new Date();
+
+        birthdate = new Date(birthdate);
+        dateoftoday = new Date(dateoftoday);
+
+        let years = (dateoftoday.getFullYear() - birthdate.getFullYear());
+
+        if (dateoftoday.getMonth() < birthdate.getMonth() ||
+            dateoftoday.getMonth() == birthdate.getMonth() && dateoftoday.getDate() < birthdate.getDate()) {
+            years--;
+        }
+
+        alert(birthdate)
+        alert(years)
+
+    });
 })();
