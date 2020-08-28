@@ -89,6 +89,9 @@
         },
     ];
 
-    // your code here
-
+    document.getElementById("run").addEventListener("click", function () {
+        var jean;
+        people.forEach(person => {if (person.firstname === "Jean") {console.log(person.firstname+ " "+person.lastname+ " "+person.email);jean=person}});
+        console.log(people.indexOf(person = jean))
+    });
 })();
