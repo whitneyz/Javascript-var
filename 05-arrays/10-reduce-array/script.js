@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -89,6 +89,22 @@
         },
     ];
 
-    // your code here
+    /*document.getElementById("run").addEventListener("click", function () {
 
+        people.forEach(person.age)
+        var sum = people.reduce(function(a,b) {
+            return a + b;
+        }, 0);
+        console.log(sum);
+    });
+})();*/
+
+document.querySelector("button").onclick = function (event) {
+    let newAge = []
+    people.forEach(function (age) {
+        newAge.push(age.age);
+    });
+    let sum = newAge.reduce( (a, b) => a + b)
+    console.log(sum);
+}
 })();
