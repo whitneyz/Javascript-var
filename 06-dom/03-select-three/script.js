@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+ const watjegaatveranderen = document.querySelectorAll(".target");
+
+ //loop
+    watjegaatveranderen.forEach(element => {element.textContent = "owned";});
 
 })();
