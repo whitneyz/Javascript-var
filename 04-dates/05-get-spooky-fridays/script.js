@@ -9,25 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
-    1 document.getElementById("year").value
-    var year first
-    var date = new Date(year, month, 13)
+    document.getElementById("run").addEventListener("click", function () {
+        let year = document.getElementById("year").value;
+        alert(year);
+        for (month=0; month<12; month++) {
+       let friday = new Date(year, month, 13);
+            if (friday.getDay() ==5) {
+                alert(friday.toLocaleString('default', { month: 'long' }));
+            }
 
-    2 for the loop for (var month=0; month<12; month++) {
-    }
-    3 if (d.getDay() === 5){}
-    4 alert(d.toLocaleString('default', { month: 'long' }));
-first get year
-    loop 12 months
-    date (yearinput, loopmonth, 13)
-    is it day 5
-    yes?
-        console.log (date.getMonth())
-        date.toLocaleString('default',{month:'long'});
+        }
+
+    });
 })();
+
 
 /*(function() {
     var allSpookyMonths = [];
