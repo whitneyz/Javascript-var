@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    var gallery= [
+    var gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,6 +19,20 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    //how do I access the full array, by the word gallery but where do I put it
+  //need addeventlistener to click
+    // need loop to go to next image after clicking
+    //need to make a function with a variabele
 
-})();
+document.querySelector("img")addEventListener("click")
+
+
+    //for (initialization; condition; final expression) { // code to be executed}
+    for (var i = 0; i < gallery.length; i++) {
+        if (i = 0){
+            document.querySelector("img").src
+        }
+    }
+
+
+        })});

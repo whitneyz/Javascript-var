@@ -11,11 +11,10 @@
 
 (function() {
 
-    const srcImage = document.getElementById("source").getAttribute("data-image");
+    const srcImage = document.getElementById("img").getAttribute("data-image");
     const image = document.createElement("img");
     image.setAttribute("src", srcImage);
     document.getElementById("target").appendChild(image);
-
 
 
 })();

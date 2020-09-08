@@ -8,9 +8,14 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
+//Awet vragen
 (function() {
 
-    // your code here
+   let run = document.getElementById("run")
+   run.addEventListener("click", getPostsWithComments)
+
+   function getPostsWithComments () {
+      window.lib.ge
+   }
 
 })();
