@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let password1 = document.getElementById("passe-one");
+        let password2 = document.getElementById("pass-two");
 
-})();
+        if (password1.value === password2.value) {
+            alert("ok");
+        } else {
+            //kleur borders password rood
+            password1.style.border = " 20px solid red";
+            password2.style.border = " 20px solid red";
+        }
+    })
+});
