@@ -8,14 +8,23 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-//Awet vragen
-(function() {
 
-   let run = document.getElementById("run")
-   run.addEventListener("click", getPostsWithComments)
+    document.getElementById("run").addEventListener("click", function () {
+        var password1 = document.getElementById("pass-one");
+        var password2 = document.getElementById("pass-two");
+        // var comment1 = document.getElementById("pass-one");
+        //var comment2 = document.getElementById("pass-two");
 
-   function getPostsWithComments () {
-      window.lib.ge
-   }
+        if (password1.value === password2.value) {
+            alert("Ok");
+        } else {
+                password1.classList.add("error");
+                password2.classList.add("error");
+        }
+    });
+/*let run = document.getElementById("run")
+run.addEventListener("click", getPostsWithComments)
 
-})();
+function getPostsWithComments () {
+   window.lib.ge*/
+
