@@ -8,18 +8,20 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<img src="resources/images.jpeg" alt="image game" style="width: 100%; height: auto;" id="bg">
-
-<div class="container">
+<div class="container" id="playercontainer">
     <p><strong>Player</strong></p>
-    <button type="button" class="btn btn-outline-warning btn-lg">Stone</button>
-    <button type="button" class="btn btn-outline-info btn-lg">Paper</button>
-    <button type="button" class="btn btn-outline-success btn-lg">Scissor</button>
+    <button type="button" class="btn btn-outline-warning btn-lg" id="pressstone">Stone</button>
+    <button type="button" class="btn btn-outline-info btn-lg" id="presspaper">Paper</button>
+    <button type="button" class="btn btn-outline-success btn-lg" id="pressscissor">Scissor</button>
 </div>
 
-<div class="container">
+<div class="container" id="computercontainer">
     <p><strong>Computer</strong></p>
-    <button type="button" class="btn btn-outline-danger btn-lg btn-block">?</button>
+    <button type="button" class="btn  btn-outline-primary btn-lg" id="btncomputer">?</button>
+</div>
+<div class="container" id="resetcontainer">
+    <p><strong>Reset</strong></p>
+    <button type="button" class="btn  btn-outline-danger btn-lg" id="btnreset">?</button>
 </div>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -31,5 +33,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </body>
 </html>

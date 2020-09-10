@@ -2,3 +2,34 @@
     height: 100%;
     width: auto;
 }*/
+body {
+    background-image: url("resources/images.jpeg");
+    background-size: cover;
+}
+
+#btncomputer {
+    width: 500px;
+}
+
+#playercontainer {
+    background-color: #00FF0080;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+
+}
+
+#resetcontainer {
+    background-color: #FF909080;
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+#computercontainer {
+    background-color: #0F8BC480;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+}
