@@ -11,16 +11,19 @@
 
 (function typeWriter() {
     var i = 0;
-    var text = "Je suis un texte qui va apparaître dans un effet machine à écrire, un peu comme dansles films noirs. Sauf que... je ne sais pas qui est l'assassin ! Y en a-t-il vraiment un ?Habite-t-il au 21 ? Que de mystères";
+    var textEffect = "Je suis un texte qui va apparaître dans un effet machine à écrire, un peu comme dans";
     var speed = 50;
 
-    if (i < text.length) {
-        document.getElementById("target").innerText += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
+    function typeWriter () {
+        if (i < textEffect.length) {
+            document.getElementById("target").innerHTML += textEffect.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
     }
-    /* Je suis un texte qui va apparaître dans un effet "machine à écrire", un peu comme dans
+
+    // function Typewriter ();
+})();
+/* Je suis un texte qui va apparaître dans un effet "machine à écrire", un peu comme dans
      les films noirs. Sauf que... je ne sais pas qui est l'assassin ! Y en a-t-il vraiment un ?
      Habite-t-il au 21 ? Que de mystères !*/
-
-})();
