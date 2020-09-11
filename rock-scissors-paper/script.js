@@ -8,8 +8,8 @@
     let scoreComputer = 0;
     let lastoutcome = 0;
     function update () {
-        document.getElementById("playerscore").value = playerwins;
-        document.getElementById("computerscore").value = computerwins;
+        document.getElementById("playerscore").innerText = scorePlayer;
+        document.getElementById("computerscore").innerText = scoreComputer;
     }
     document.getElementById("presspaper").addEventListener("click", function () {
         playersChoice = 1;
@@ -31,19 +31,32 @@
         }
         if (playersChoice === 1 && randomChoice === 2) {
             console.log("computer won");
-           playerwins = playerwins++;
-           update ()
+            console.log(scoreComputer);
+            scoreComputer++;
+            document.getElementById("computerscore").innerText = scoreComputer;
         } else if (playersChoice === 2 && randomChoice === 3) {
             console.log("computer won");
+            scoreComputer++;
+            console.log(scoreComputer);
+            document.getElementById("computerscore").innerText = scoreComputer;
         } else if (playersChoice === 3 && randomChoice === 1) {
             console.log("computer won");
+            scoreComputer++;
+            console.log(scoreComputer);
+            document.getElementById("computerscore").innerText = scoreComputer;
         }
         if (playersChoice === 2 && randomChoice === 1) {
             console.log("player won");
+            scorePlayer++;
+            document.getElementById("playerscore").innerText = scorePlayer;
         } else if (playersChoice === 3 && randomChoice === 2) {
             console.log("player won");
+            scorePlayer++;
+            document.getElementById("playerscore").innerText = scorePlayer;
         } else if (playersChoice === 1 && randomChoice ===3) {
             console.log("player won");
+            scorePlayer++;
+            document.getElementById("playerscore").innerText = scorePlayer;
         }
     }
 

@@ -18,7 +18,7 @@
 
     my_span.innerText = "Woo-hoo!";
     document.getElementById("target").appendChild(my_span).style.fontSize = "xx-small";
-
+    //random fontsize and use set time-out for interval. set-timeout is a function and put line (document.... also in it
     my_span1.innerText = "I'm making waves!";
     document.getElementById("target").appendChild(my_span1).style.fontSize = "small";
 
