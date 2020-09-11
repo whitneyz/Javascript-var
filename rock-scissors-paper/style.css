@@ -4,6 +4,7 @@
 }*/
 body {
     background-image: url("resources/images.jpeg");
+    height: 100%;
     background-size: cover;
 }
 
@@ -27,7 +28,7 @@ body {
 
 }
 
-#computercontainer {
+#scorecontainer {
     background-color: #0F8BC480;
     width: 50%;
     position: absolute;
