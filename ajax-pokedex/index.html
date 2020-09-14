@@ -4,18 +4,130 @@
     <meta charset="UTF-8">
     <title>Whitneyz Pokédex</title>
     <link rel="stylesheet" href="style.css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+            rel="stylesheet"
+    >
 </head>
 <body>
 <h1></h1>
 <div class="poke-container">
     <a href="https://fontmeme.com/pokemon-font/"><img src="https://fontmeme.com/permalink/200914/4ddc26032179822440e767cb505f756f.png" alt="pokemon-font" border="0"></a>
-    <ul>
-        <li id="number"></li>
+    <ul id="pokedex"></ul>
+    <!--<ul>
+        <li id="IDnumber"></li>
         <li id="moves"></li>
         <li id="sprites"></li>
         <li id="evolution"></li>
-    </ul>
+    </ul>-->
 </div>
+<h1 class="title title-1">Let's go catch 'em all !</h1>
+<div id="bgOverlay"></div>
+<div class="pokedex">
+    <div class="left">
+        <div class="left-main">
+            <div class="left-top-wrapper">
+                <div class="left-top">
+                    <div class="blueBtn btn huge" id="blueBtn"></div>
+                    <div class="redBtn btn medium"></div>
+                    <div class="jauneBtn btn medium"></div>
+                    <div class="vertBtn btn medium"></div>
+                </div>
+
+            </div>
+
+            <div class="left-screen">
+                <div class="screen-border-grey">
+                    <div class="screen-top-btn">
+                        <div class="redBtn btn small"></div>
+                        <div class="redBtn btn small"></div>
+                    </div>
+                    <div class="screen-black">
+                        <img src="" alt="" id="image">
+
+                    </div>
+                    <div class="screen-bottom-btn">
+                        <div class="redBtn btn medium"></div>
+                        <div class="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-commands">
+                <div class="noirBtn btn large"></div>
+                <div class="commands-central">
+                    <div class="longBtn redBtn"></div>
+                    <div class="longBtn blueBtn"></div>
+                    <div class="greenScreen medlargeScreen">
+                        <h4 class="title title-4" id="name"></h4>
+                    </div>
+                </div>
+                <div class="croix"></div>
+            </div>
+        </div>
+
+        <div class="central-cylinder">
+            <div class="cynlinder-central-block"></div>
+        </div>
+    </div>
+
+    <!-- Partie droite :  -->
+    <div class="right-wrapper">
+        <div class="right">
+            <div class="blackScreen largeScreen">
+                <p id="index"></p>
+                <div id="typeBubbleDiv">
+                    <div id="bubble1" class="typeBubble"></div>
+                    <div id="bubble2" class="typeBubble"></div>
+                </div>
+                <p id="type"></p>
+                <p id="height"></p>
+                <p id="weight"></p>
+                <p id="region"></p>
+            </div>
+            <div class="gridBtn blueGrid">
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+                <div class="gridCell"></div>
+            </div>
+            <div class="longBtnRight">
+                <div class="longBtn noirBtn"></div>
+                <div class="longBtn noirBtn"></div>
+            </div>
+            <div class="gridBtn whiteGrid">
+                <input id="inputIndex" type="number" min="1" max="151" placeholder="#___">
+                <label for="inputIndex" id="labelInputIndex">ID between 1 and 151</label>
+            </div>
+            <div class="jauneBtn btn large" id="btnJaune"></div>
+            <div class="noirScreen mediumScreen" id="prev">&#11207;</div>
+            <div class="noirScreen mediumScreen" id="next">&#11208;</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="pokeball" id="pokeball">
+    <div class="pokeballTop"></div>
+    <div class="pokeballCenter"></div>
+    <div class="pokeballCenter-circle"></div>
+    <div class="pokeballBottom"></div>
+</div>
+
+<div class="socialBg" id="socialBg">
+</div>
+
 <script src="./script.js"></script>
 </body>
 </html>
