@@ -13,7 +13,6 @@
 
   let rangeSlider = document.getElementById("slider");
   let output = document.getElementById("target");
-  //const lead ="0";
   output.innerHTML = rangeSlider.value;
   rangeSlider.oninput = function () {
      output.innerHTML = "0" + this.value;

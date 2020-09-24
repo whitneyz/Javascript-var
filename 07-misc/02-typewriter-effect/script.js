@@ -22,7 +22,8 @@
         }
     }
 
-    // function Typewriter ();
+    typeWriter();
+    
 })();
 /* Je suis un texte qui va apparaître dans un effet "machine à écrire", un peu comme dans
      les films noirs. Sauf que... je ne sais pas qui est l'assassin ! Y en a-t-il vraiment un ?
