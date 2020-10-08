@@ -9,41 +9,63 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+var tbl = document.createElement("table");
 
-    var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
 
-    // creating all cells
-    for (var i = 0; i < 10; i++){
-        // creates a table row
-        var row = document.createElement("tr");
 
-        for (var j = 0; j < 10; j++) {
-            // Create a <td> element and a text node, make the text
-            // node the contents of the <td>, and put the <td> at
-            // the end of the table row
-            var cell = document.createElement("td");
-            var cellText = document.createTextNode("cell in row "+i+", column "+j);
-            cell.appendChild(cellText);
-            row.appendChild(cell);
-            /*for multiplication moeten we loop gebruiken die begint bij 1 (0) tm 10 * 1 tm 10 en de volgende
-            is dan 2, 3, 4 etc */
-            let x = 10;
-            let y = 10;
-            let multi = x * y;
-            for (let i = 1; i <= x; i++) {
-                //hier moet berekening komen
-            }
-        }
+//create 10 columns
+target.appendChild(tbl);
 
-        // add the row to the end of the table body
-        tblBody.appendChild(row);
+function makeRowWithTenColumns (currentRow) {
+    let row = document.createElement("tr");
+    for (let i = 1; i<=10; i++) {
+        let columns = document.createElement("td");
+        columns.innerText = (currentRow * i);
+        row.appendChild(columns);
     }
+    return row;
+}
+for (let i=1;i<=10; i++) {
+    let row = makeRowWithTenColumns(i);
+    tbl.appendChild(row);
+}
 
-    // put the <tbody> in the <table>
-    tbl.appendChild(tblBody);
-    // appends <table> into <body>
-    target.appendChild(tbl);
 
-})();
+
+
+/*  var tbl = document.createElement("table");
+  var tblBody = document.createElement("tbody");
+
+  // creating all cells
+  for (var i = 0; i < 10; i++){
+      // creates a table row
+      var row = document.createElement("tr");
+
+      for (var j = 0; j < 10; j++) {
+          // Create a <td> element and a text node, make the text
+          // node the contents of the <td>, and put the <td> at
+          // the end of the table row
+          var cell = document.createElement("td");
+          var cellText = document.createTextNode("cell in row "+i+", column "+j);
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+          for multiplication moeten we loop gebruiken die begint bij 1 (0) tm 10 * 1 tm 10 en de volgende
+          is dan 2, 3, 4 etc
+          let x = 10;
+          let y = 10;
+          let multi = x * y;
+          for (let i = 1; i <= x; i++) {
+              //hier moet berekening komen
+          }
+      }
+
+      // add the row to the end of the table body
+      tblBody.appendChild(row);
+  }
+
+  // put the <tbody> in the <table>
+  tbl.appendChild(tblBody);
+  // appends <table> into <body>
+  target.appendChild(tbl);
+
+})();*/
