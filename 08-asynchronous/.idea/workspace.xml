@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="247b38d0-f7cd-4dda-8179-080d17244274" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../07-misc/02-typewriter-effect/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../07-misc/02-typewriter-effect/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00-example/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/00-example/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ajax-pokedex/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ajax-pokedex/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../script.js" beforeDir="false" />
@@ -47,6 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601572309334</updated>
-      <workItem from="1601572310521" duration="2979000" />
+      <workItem from="1601572310521" duration="4042000" />
     </task>
     <servers />
   </component>
