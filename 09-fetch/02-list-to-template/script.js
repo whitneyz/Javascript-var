@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let storeHeroes = document.getElementById("target");
+    let getTemplate = document.getElementById("tpl-hero");
+    fetch('http://localhost:3000/heroes')
+        .then(response => response.json())
+        .then(data => {
+            for (let i = 0; i < data.length; i++) {
+                let clone = getTemplate.content.cloneNode(true);
+                clone.querySelector(".name").innerHTML = data[i]['name'];
+                clone.querySelector(".alter-ego").innerHTML = data[i]['alterEgo'];
+                clone.querySelector(".powers").innerHTML = data[i]['abilities'];
+                storeHeroes.appendChild(clone);
+
+            }
+        });
+
+
 })();
